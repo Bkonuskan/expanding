@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>City</title>
+     <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="container">
+     <div class="card active" style="background-image: url(https://assets.eberhardt-travel.de/2022/Tuerkei/107755_Blaue_Moschee_in_Istanbul_original.jpg?auto=format,compress,enhance&fit=crop&crop=bottom&txt=Foto%20Dario%20Bajurin%20-%20stock.adobe.com&txtclr=fff&txtalign=right&txtsize=8&h=485&w=850&q=75);"><h3>İstanbul</h3></div>
+     <div class="card" style="background-image: url(https://preview.redd.it/55dg1o7e1d411.jpg?auto=webp&s=ffbb295c63bf75d81d9d178fc83dafefdbf6b9ed);"><h3>Newyork</h3></div>
+     <div class="card" style="background-image: url(https://wallpapercave.com/wp/wp3463463.jpg);"><h3>Singapur</h3></div>
+     <div class="card" style="background-image: url(https://neredekalinir.com/wp-content/uploads/2019/11/koln.jpg);"><h3>Köln</h3></div>
+    
+    </div>
+
+      
+    <script>
+       
+       const cards= document.querySelectorAll(".card")
+
+       function removeActiveClass( ) {
+         cards.forEach(card=>{
+
+                card.classList.remove("active")
+         })         
+       }
+
+       cards.forEach(card=>{
+         card.addEventListener("click", ()=>{
+           removeActiveClass();
+           card.classList.add("active")
+         })
+       })
+
+      
+    </script>
+  </body>
+</html>
